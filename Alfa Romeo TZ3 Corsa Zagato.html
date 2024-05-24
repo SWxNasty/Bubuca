@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>АвтоЖурнал</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="index.html">Назад</a>
+            
+        </div>
+        <button id="theme-toggle">Переключить тему</button>
+    </div>
+
+<h1 class="h2">Alfa Romeo TZ3 Corsa Zagato 2010</h1>
+
+
+<div class="main1">
+<p>Суперкар появился в 2010 году, производитель Alfa Romeo, располагающийся в стране Италия и Zagato, находящийся в стране Италия. Двигатель Alfa Romeo TZ3 Corsa Zagato объёмом 4244 см³ развивает мощность 420 лошадиных сил, что позволяет автомобилю разгоняться до 100 километров в час за 3.2 секунды и развивать максимальную скорость 300 км/ч. Цена Alfa Romeo TZ3 Corsa Zagato - 3 000 000 $ или 285 000 000 ₽.</p>
+<img src="/img/car3_2.jpeg" alt="Error"></a>
+</div>
+
+<div class="body1_2"
+<div class="spec-container">
+    <h1 class="spec-title">Технические характеристики</h1>
+    <div class="spec-item">
+        <span class="spec-label">Максимальная скорость: 300 км/ч</span>
+        <div class="spec-bar-container"><div class="speed-bar3 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Разгон до 100 км/ч: 3.2 сек</span>
+        <div class="spec-bar-container"><div class="acceleration-bar3 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Мощность: 420 л.с.</span>
+        <div class="spec-bar-container"><div class="power-bar3 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Крутящий момент: 490 н.м. (при 4750 об/мин.)</span>
+        <div class="spec-bar-container"><div class="torque-bar3 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Объём двигателя: 4244 см³</span>
+        <div class="spec-bar-container"><div class="displacement-bar3 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Масса: 850 кг</span>
+        <div class="spec-bar-container"><div class="weight-bar3 spec-bar"></div></div>
+</div>
+</div>
+</div>
+
+<div class="main1">
+    <p>Год выпуска: 2010 <br>
+        Производитель (страна): Alfa Romeo (Италия) и Zagato (Италия)</p>
+    </div>
+
+
+<script>
+var theme = localStorage.getItem('theme');
+if (theme === 'dark') {
+    document.body.classList.add('dark-theme');
+}
+
+document.getElementById('theme-toggle').addEventListener('click', function () {
+    document.body.classList.toggle('dark-theme');
+    localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+});
+
+            </script>
+        
+</body>
+</html>

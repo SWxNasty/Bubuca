@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>АвтоЖурнал</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="index.html">Назад</a>
+            
+        </div>
+        <button id="theme-toggle">Переключить тему</button>
+    </div>
+
+<h1 class="h2">Aston Martin Vulcan AMR Pro 2018</h1>
+
+
+<div class="main1">
+<p>Суперкар появился в 2018 году, производитель Aston Martin, располагающийся в стране Великобритания. Двигатель Aston Martin Vulcan AMR Pro объёмом 6996 см³ развивает мощность 831 лошадиных сил, что позволяет автомобилю разгоняться до 100 километров в час за 2.9 секунды и развивать максимальную скорость 350 км/ч. Цена Aston Martin Vulcan AMR Pro - 2 600 000 $ или 247 000 000 ₽.</p>
+<img src="/img/car9_2.jpeg" alt="Error"></a>
+</div>
+
+<div class="body1_2"
+<div class="spec-container">
+    <h1 class="spec-title">Технические характеристики</h1>
+    <div class="spec-item">
+        <span class="spec-label">Максимальная скорость: 350 км/ч</span>
+        <div class="spec-bar-container"><div class="speed-bar9 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Разгон до 100 км/ч: 2.9 сек</span>
+        <div class="spec-bar-container"><div class="acceleration-bar9 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Мощность: 831 л.с.</span>
+        <div class="spec-bar-container"><div class="power-bar9 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Крутящий момент: 800 н.м. (при 6000 об/мин.)</span>
+        <div class="spec-bar-container"><div class="torque-bar9 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Объём двигателя: 6996 см³</span>
+        <div class="spec-bar-container"><div class="displacement-bar9 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Масса: 1334 кг</span>
+        <div class="spec-bar-container"><div class="weight-bar9 spec-bar"></div></div>
+</div>
+</div>
+</div>
+
+<div class="main1">
+    <p>Год выпуска: 2018 <br>
+        Производитель (страна): Aston Martin (Великобритания)
+</p>
+    </div>
+
+
+<script>
+var theme = localStorage.getItem('theme');
+if (theme === 'dark') {
+    document.body.classList.add('dark-theme');
+}
+
+document.getElementById('theme-toggle').addEventListener('click', function () {
+    document.body.classList.toggle('dark-theme');
+    localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+});
+
+            </script>
+        
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>АвтоЖурнал</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="index.html">Назад</a>
+            
+        </div>
+        <button id="theme-toggle">Переключить тему</button>
+    </div>
+
+<h1 class="h2">Ariel Atom 3S 2014</h1>
+
+
+<div class="main1">
+<p>Суперкар появился в 2014 году, производитель Ariel, располагающийся в стране Великобритания. Двигатель Ariel Atom 3S объёмом 2354 см³ развивает мощность 370 лошадиных сил, что позволяет автомобилю разгоняться до 100 километров в час за 2.8 секунды и развивать максимальную скорость 265 км/ч. Цена Ariel Atom 3S - 120 000 $ или 11 400 000 ₽.</p>
+<img src="/img/car4_2.jpeg" alt="Error"></a>
+</div>
+
+<div class="body1_2"
+<div class="spec-container">
+    <h1 class="spec-title">Технические характеристики</h1>
+    <div class="spec-item">
+        <span class="spec-label">Максимальная скорость: 265 км/ч</span>
+        <div class="spec-bar-container"><div class="speed-bar4 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Разгон до 100 км/ч: 2.8 сек</span>
+        <div class="spec-bar-container"><div class="acceleration-bar4 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Мощность: 370 л.с.</span>
+        <div class="spec-bar-container"><div class="power-bar4 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Крутящий момент: 420 н.м. (при 4400 об/мин.)</span>
+        <div class="spec-bar-container"><div class="torque-bar4 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Объём двигателя: 2354 см³</span>
+        <div class="spec-bar-container"><div class="displacement-bar4 spec-bar"></div></div>
+    </div>
+    <div class="spec-item">
+        <span class="spec-label">Масса: 612 кг</span>
+        <div class="spec-bar-container"><div class="weight-bar4 spec-bar"></div></div>
+</div>
+</div>
+</div>
+
+<div class="main1">
+    <p>Год выпуска: 2014 <br>
+        Производитель (страна): Ariel (Великобритания)</p>
+    </div>
+
+
+<script>
+var theme = localStorage.getItem('theme');
+if (theme === 'dark') {
+    document.body.classList.add('dark-theme');
+}
+
+document.getElementById('theme-toggle').addEventListener('click', function () {
+    document.body.classList.toggle('dark-theme');
+    localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+});
+
+            </script>
+        
+</body>
+</html>

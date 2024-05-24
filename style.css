@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #007bff;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+.search {
+    margin-left: auto;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    padding: 0 20px; 
+    flex-wrap: wrap; 
+}
+
+.card {
+    flex: 1 0 200px; 
+    max-width: 300px;
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #007bff;
+}
+ 
+a {
+  color: var(--accent-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #222222;
+    --text-color: #ffffff;
+    --accent-color: #00a7ff;
+  }
+}
+
+
+  
+body.dark-theme {
+    --background-color: #222222;
+    --text-color: #ffffff;
+    --accent-color: #00a7ff;
+}
+  
+h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    float: left;
+    width: 100%;
+    max-width: 300px;
+    padding: 5px 0;
+}
+
+p {
+    width: 100%;
+    float: left;
+    line-height: 150%;
+    margin: 1% 0;
+}
+
+.main1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    padding: 0 15%; 
+    flex-wrap: wrap; 
+}
+
+.h2 {
+    padding: 0 15%;
+}
+
+.body1_2 {
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 0 15%;
+}
+.spec-container {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+}
+.spec-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.spec-item {
+    margin-bottom: 5px;
+}
+.spec-label {
+    display: block;
+    color: #fff;
+    margin-bottom: .5em;
+    font-size: .875em;
+    line-height: normal;
+}
+.spec-bar-container {
+    position: relative;
+    width: 60%;
+    height: .25em;
+    background-color: #555;
+}
+.spec-bar {
+    height: .25em;
+    background-color: red;
+}
+
+/* Пример процентов для демонстрации */
+.speed-bar { width: 85%; } /* Максимальная скорость */
+.acceleration-bar { width: 50%; } /* Разгон до 100 км/ч */
+.power-bar { width: 40%; } /* Мощность */
+.torque-bar { width: 45%; } /* Крутящий момент */
+.displacement-bar { width: 25%; } /* Объём двигателя */
+.weight-bar { width: 35%; } /* Масса */
+
+/* Пример процентов для демонстрации */
+.speed-bar2 { width: 75%; } /* Максимальная скорость */
+.acceleration-bar2 { width: 35%; } /* Разгон до 100 км/ч */
+.power-bar2 { width: 10%; } /* Мощность */
+.displacement-bar2 { width: 10%; } /* Объём двигателя */
+.weight-bar2 { width: 75%; } /* Масса */
+
+/* Пример процентов для демонстрации */
+.speed-bar3 { width: 75%; } /* Максимальная скорость */
+.acceleration-bar3 { width: 70%; } /* Разгон до 100 км/ч */
+.power-bar3 { width: 15%; } /* Мощность */
+.torque-bar3 { width: 20%; } /* Крутящий момент */
+.displacement-bar3 { width: 25%; } /* Объём двигателя */
+.weight-bar3 { width: 50%; } /* Масса */
+
+/* Пример процентов для демонстрации */
+.speed-bar4 { width: 60%; } /* Максимальная скорость */
+.acceleration-bar4 { width: 65%; } /* Разгон до 100 км/ч */
+.power-bar4 { width: 10%; } /* Мощность */
+.torque-bar4 { width: 15%; } /* Крутящий момент */
+.displacement-bar4 { width: 8%; } /* Объём двигателя */
+.weight-bar4 { width: 68%; } /* Масса */
+
+/* Пример процентов для демонстрации */
+.speed-bar5 { width: 75%; } /* Максимальная скорость */
+.acceleration-bar5 { width: 85%; } /* Разгон до 100 км/ч */
+.power-bar5 { width: 20%; } /* Мощность */
+.torque-bar5 { width: 10%; } /* Крутящий момент */
+.displacement-bar5 { width: 13%; } /* Объём двигателя */
+.weight-bar5 { width: 80%; } /* Масса */
+
+/* Пример процентов для демонстрации */
+.speed-bar6 { width: 60%; } /* Максимальная скорость */
+.acceleration-bar6 { width: 70%; } /* Разгон до 100 км/ч */
+.power-bar6 { width: 12%; } /* Мощность */
+.torque-bar6 { width: 11%; } /* Крутящий момент */
+.displacement-bar6 { width: 13%; } /* Объём двигателя */
+.weight-bar6 { width: 65%; } /* Масса */
+
+/* Пример процентов для демонстрации */
+.speed-bar7 { width: 80%; } /* Максимальная скорость */
+.acceleration-bar7 { width: 60%; } /* Разгон до 100 км/ч */
+.power-bar7 { width: 30%; } /* Мощность */
+.torque-bar7 { width: 40%; } /* Крутящий момент */
+.displacement-bar7 { width: 43%; } /* Объём двигателя */
+.weight-bar7 { width: 30%; } /* Масса */
+
+/* Пример процентов для демонстрации */
+.speed-bar8 { width: 85%; } /* Максимальная скорость */
+.acceleration-bar8 { width: 80%; } /* Разгон до 100 км/ч */
+.power-bar8 { width: 50%; } /* Мощность */
+.displacement-bar8 { width: 45%; } /* Объём двигателя */
+.weight-bar8 { width: 40%; } /* Масса */
+
+/* Пример процентов для демонстрации */
+.speed-bar9 { width: 85%; } /* Максимальная скорость */
+.acceleration-bar9 { width: 75%; } /* Разгон до 100 км/ч */
+.power-bar9 { width: 40%; } /* Мощность */
+.torque-bar9 { width: 42%; } /* Крутящий момент */
+.displacement-bar9 { width: 50%; } /* Объём двигателя */
+.weight-bar9 { width: 35%; } /* Масса */

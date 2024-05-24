@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>АвтоЖурнал</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="#">Главная</a>
+            
+        </div>
+        <button id="theme-toggle">Переключить тему</button>
+    </div>
+
+    <div class="main">
+        <div class="card">
+            <a href="/9ff GT9-CS Porsche.html"><img src="/img/car1.jpeg" alt="Error"></a>
+            <h2>9ff GT9-CS Porsche</h2>
+            <p>&#128663; Скорость: 364 км/ч.<br>
+                &#128293; Мощность: 750 л.с.<br>
+                &#9203; Разгон до 100: 3.6 сек.</p>
+        </div>
+        <div class="card">
+            <a href="/Abarth 2000 SE027.html"><img src="/img/car2.jpeg" alt="Error"></a>
+            <h2>Abarth 2000 SE027</h2>
+            <p>&#128663; Скорость: 318 км/ч.<br>
+                &#128293; Мощность: 275 л.с.<br>
+                &#9203; Разгон до 100: 5.8 сек.</p>
+        </div>
+        <div class="card">
+            <a href="/Alfa Romeo TZ3 Corsa Zagato.html"><img src="/img/car3.jpeg" alt="Error"></a>
+            <h2>Alfa Romeo TZ3 Corsa Zagato</h2>
+            <p>&#128663; Скорость: 300 км/ч.<br>
+                &#128293; Мощность: 420 л.с.<br>
+                &#9203; Разгон до 100: 3.2 сек.</p>
+        </div>
+  
+    </div>
+
+    <div class="main">
+        <div class="card">
+            <a href="/Ariel Atom 3S.html"><img src="/img/car4.jpeg" alt="Car 1"></a>
+            <h2>Ariel Atom 3S</h2>
+            <p>&#128663; Скорость: 265 км/ч.<br>
+                &#128293; Мощность: 370 л.с.<br>
+                &#9203; Разгон до 100: 2.8 сек.</p>
+        </div>
+        <div class="card">
+            <a href="/Ariel Atom V8 500.html"><img src="/img/car5.jpeg" alt="Error"></a>
+            <h2>Ariel Atom V8 500</h2>
+            <p>&#128663; Скорость: 275 км/ч.<br>
+                &#128293; Мощность: 475 л.с.<br>
+                &#9203; Разгон до 100: 2.4 сек.</p>
+        </div>
+        <div class="card">
+            <a href="/Ariel Atom 3 300.html"><img src="/img/car6.jpeg" alt="Error"></a>
+            <h2>Ariel Atom 3 300</h2>
+            <p>&#128663; Скорость: 250 км/ч.<br>
+                &#128293; Мощность: 300 л.с.<br>
+                &#9203; Разгон до 100: 2.8 сек.</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="card">
+            <a href="/Arrinera Hussarya GT.html"><img src="/img/car7.jpeg" alt="Car 1"></a>
+            <h2>Arrinera Hussarya GT</h2>
+            <p>&#128663; Скорость: 320 км/ч.<br>
+                &#128293; Мощность: 660 л.с.<br>
+                &#9203; Разгон до 100: 3.3 сек.</p>
+        </div>
+        <div class="card">
+            <a href="/Aston Martin Valkyrie AMR Pro.html"><img src="/img/car8.jpeg" alt="Error"></a>
+            <h2>Aston Martin Valkyrie AMR Pro</h2>
+            <p>&#128663; Скорость: 362 км/ч.<br>
+                &#128293; Мощность: 1160 л.с.<br>
+                &#9203; Разгон до 100: 2.3 сек.</p>
+        </div>
+        <div class="card">
+            <a href="/Aston Martin Vulcan AMR Pro.html"><img src="/img/car9.jpeg" alt="Error"></a>
+            <h2>Aston Martin Vulcan AMR Pro</h2>
+            <p>&#128663; Скорость: 350 км/ч.<br>
+                &#128293; Мощность: 831 л.с.<br>
+                &#9203; Разгон до 100: 2.9   сек.</p>
+        </div>
+  
+    </div>
+
+    <script>
+var theme = localStorage.getItem('theme');
+if (theme === 'dark') {
+    document.body.classList.add('dark-theme');
+}
+
+document.getElementById('theme-toggle').addEventListener('click', function () {
+    document.body.classList.toggle('dark-theme');
+    localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+});
+        </script>
+</body>
+</html>
